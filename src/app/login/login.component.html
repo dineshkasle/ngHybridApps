@@ -1,0 +1,42 @@
+<div id="outer">
+  <div id="middle">
+    <div id="sect1">
+      <div class="regBox">
+        <div class="regHeader">
+          Login Form
+        </div>
+        <div class="regContent">
+          <form #loginForm="ngForm" (ngSubmit)="onsubmit(loginForm)">
+            <table>
+              <tbody>
+              <tr>
+                <td>Date Of Birth</td>
+                <td>
+                  <input type="text"  name="dob" required="required" singleDatePicker="true" placeholder="Date Of Birth"  [ngModel]="mydob | date:'yyyy-MM-dd'" date-picker (dateselected)="dateSelected($event)" />
+                </td>
+              </tr>
+              <tr>
+                <td>Username</td>
+                <td>
+                  <input type="text" required="required" name="userName" ngModel></td>
+              </tr>
+              <tr>
+                <td>Password</td>
+                <td><input type="password" required="required" name="password" ngModel></td>
+              </tr>
+              <tr style="text-align: center">
+                <td>Already Register ? <br> <a href="/register"> Click Here</a></td>
+                <td>
+                  <button class="submitBtn" type="submit" [disabled]="loginForm.invalid"> Submit</button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+

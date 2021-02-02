@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+.center_div{
+  margin: 0 auto;
+  width:80% /* value of your choice which suits your alignment */
+}
+.regBox{
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  border-radius: 7px;
+}
+.regHeader{
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+html  {
+  background: url("https://wallpaperaccess.com/full/340434.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table{
+  width: 100%;
+}
+td,th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+input{
+  width: 100%;
+  line-height: 1.8;
+  border-radius: 5px;
+}
+#outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.submitBtn{
+  background-color: green;
+  padding: 5px;
+  color: white;
+}
